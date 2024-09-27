@@ -17,7 +17,6 @@ fn main() {
     el.join();
 }
 
-
 type Task = Box<dyn FnOnce() + Send + 'static>;
 
 struct EventLoop {
@@ -38,7 +37,9 @@ impl EventLoop {
     fn run_loop(receiver: Receiver<Task>) {
         loop {
             match receiver.recv_timeout(Duration::from_secs(5)) {
-                Ok(handler_fn) => handler_fn(),
+                Ok(handler_fn) => {
+                    std::thread::spawn(|| handler_fn());
+                }
                 Err(_) => println!("INFO - looks like nothing on the queue"),
             }
         }
