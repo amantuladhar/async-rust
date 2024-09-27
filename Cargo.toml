@@ -1,9 +1,9 @@
 [package]
-name = "rs-event-loop"
+name = "rs-async-learn"
 version = "0.1.0"
 edition = "2021"
 
 [workspace]
-members = [ "." , "try1" ]
+members = [ "." , "build-event-loop-001" ]
 
 [dependencies]

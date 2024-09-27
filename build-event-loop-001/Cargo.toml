@@ -1,10 +1,10 @@
 [package]
-name = "try1"
+name = "build-event-loop-001"
 version = "0.1.0"
 edition = "2021"
 
 [[bin]]
-name = "try1"
+name = "build-event-loop-001"
 src = "src/main.rs"
 
 [dependencies]

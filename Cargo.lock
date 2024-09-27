@@ -3,9 +3,9 @@
 version = 3
 
 [[package]]
-name = "rs-event-loop"
+name = "build-event-loop-001"
 version = "0.1.0"
 
 [[package]]
-name = "try1"
+name = "rs-async-learn"
 version = "0.1.0"
