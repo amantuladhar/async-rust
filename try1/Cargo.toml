@@ -1,9 +1,10 @@
 [package]
-name = "rs-event-loop"
+name = "try1"
 version = "0.1.0"
 edition = "2021"
 
-[workspace]
-members = [ "." , "try1" ]
+[[bin]]
+name = "try1"
+src = "src/main.rs"
 
 [dependencies]
