@@ -1,0 +1,11 @@
+[package]
+name = "ch04-epoll"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "ch04-epoll"
+src = "src/main.rs"
+
+
+[dependencies]

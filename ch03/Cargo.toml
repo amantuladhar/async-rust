@@ -1,0 +1,14 @@
+[package]
+name = "ch03"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "raw-syscall"
+src = "src/bin/raw-syscall.rs"
+
+[[bin]]
+name = "normal-syscall"
+src = "src/normal-syscall.rs"
+
+[dependencies]
